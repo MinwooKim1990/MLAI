@@ -31,16 +31,16 @@ intents = discord.Intents.default() # Enable default intents
 intents.message_content = True # Enable message content
 
 # Set the path to your service account key
-SERVER_ID = 1158829921964130445 # Discord server ID
-CHANNEL_ID = 1160889134777384960 # Discord channel ID
-papago_client_id = "_YnHyD8pk1x8nMSmlhfn" # 개발자센터에서 발급받은 Client ID 값
-papago_client_secret = "bEuJfkBjJD" # 개발자센터에서 발급받은 Client Secret 값
+SERVER_ID =  # Discord server ID
+CHANNEL_ID =  # Discord channel ID
+papago_client_id =  # 개발자센터에서 발급받은 Client ID 값
+papago_client_secret =  # 개발자센터에서 발급받은 Client Secret 값
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "TextToSpeechKey.json" # Google Cloud service account key
 client_file = "SpeechToTextKey.json" # Google Cloud service account key
 credentials = service_account.Credentials.from_service_account_file(client_file) # Google Cloud service account credentials
 stt_client = speech.SpeechClient(credentials=credentials) # Google Cloud STT client
-token = 'MTE1OTA2MDE3OTE3NDgzNDIwNg.GYqbRD._Qe_uKDJ1_KaPepcSiC-npsm35d1xuqC9kkq3M' # Discord bot token
-openai.api_key = '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' # OpenAI API key
+token =  # Discord bot token
+openai.api_key =  # OpenAI API key
 client = discord.Client(intents=intents) # Create a new client instance (bot)
 
 # Initialize LLAMA model once
